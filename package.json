@@ -1,0 +1,34 @@
+{
+	"name": "polling-and-streaming-experiment",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:server": "node server.js",
+		"start:stream-client": "cross-env MODE=stream NAME=Stream_Client node client.js",
+		"start:poll-client": "cross-env MODE=poll NAME=Poll_Client node client.js",
+		"start:bot-client": "cross-env NAME=Bot node bot.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cerino-ligutom/polling-and-streaming-experiment.git"
+	},
+	"author": {
+		"email": "zeferinix@gmail.com",
+		"name": "Cerino O. Ligutom III",
+		"url": "https://www.zeferinix.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cerino-ligutom/polling-and-streaming-experiment/issues"
+	},
+	"homepage": "https://github.com/cerino-ligutom/polling-and-streaming-experiment#readme",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"cross-env": "^7.0.2",
+		"express": "^4.17.1",
+		"express-ws": "^4.0.0",
+		"readline": "^1.3.0"
+	},
+	"devDependencies": {}
+}
